@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="example Partners is committed to working with and providing great job opportunities to freelancers at reasonable commission. No percentage but a fixed administrative fee. We invite you to explore the many career opportunities we have to offer. "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/primary_text" />
+
+            <TextView
+                android:id="@+id/tvApplyHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDescription"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Apply Here"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/colorGreen" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleSubscribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get our bi-monthly opportunities update:"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primary_text" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleSubscribe"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/btnSubscribe"
+                        android:background="@drawable/edt_rounded_white_transparent"
+                        android:hint="Email address"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/primary_text" />
+
+                    <Button
+                        android:id="@+id/btnSubscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/edtEmail"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/edtEmail"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_green"
+                        android:text="Subscribe"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleReference"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reference"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/tvReference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="Reference"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleLocation"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:text="Location"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="Location"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleStartDate"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:text="Start date"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="Start date"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleDuration"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:text="Duration"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="Duration"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitleTravel"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:text="Travel"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/tvTravel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="Travel"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitlePublicationDate"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:text="Publication date"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/tvPublicationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="Publication date"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:id="@+id/tvContext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Context"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llContext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFunctionDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Function description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llFunctionDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Education"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="Minimum master / license"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCertification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Certification"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llCertification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="PRINCE2"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvLanguageRequirement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Language requirement"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llLanguageRequirement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvTitleFrench"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="French:"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/primary_text" />
+
+                    <TextView
+                        android:id="@+id/tvFrench"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tvTitleReference"
+                        android:text="Good (*)"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tvTitleDutch"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dutch:"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/primary_text" />
+
+                    <TextView
+                        android:id="@+id/tvDutch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tvTitleReference"
+                        android:text="Fluent (*)"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tvTitleEnglish"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="English:"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/primary_text" />
+
+                    <TextView
+                        android:id="@+id/tvEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tvTitleReference"
+                        android:text="Basic (*)"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/secondary_text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="(*) French or Dutch fluent"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/secondary_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRequiredKnowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Required knowledge / Experience"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Experience"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTechnicalExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Technical experience"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTechnicalMandatory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Mandatory:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llTechnicalMandatory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTechnicalPreferable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Preferable:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llTechnicalPreferable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFunctionalExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Functional experience"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFunctionalMandatory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Mandatory:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llFunctionalMandatory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFunctionalPreferable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Preferable:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llFunctionalPreferable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvBusinessExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Business experience"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBusinessMandatory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:padding="5dp"
+                android:text="Mandatory:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llBusinessMandatory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvBusinessPreferable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Preferable:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llBusinessPreferable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvSoftSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Soft Skills"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSoftSkillsMandatory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Mandatory"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llSoftSkillsMandatory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSoftSkillsPreferable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Preferable"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llSoftSkillsPreferable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReference"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvTitleReference"
+                android:text="Other"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Praesent nec velit sed lacus bibendum accumsan a vel neque."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Proin vel nibh quis diam pretium finibus vel nec nisi."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Mauris auctor sem sed viverra sagittis."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitleReference"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tvTitleReference"
+                    android:text="&#8226;   Vestibulum ut massa eu risus egestas pulvinar."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnApplyOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded_green"
+                    android:text="Apply Online"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnSendMeOpportunity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded_green"
+                    android:text="Send me this opportunity"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

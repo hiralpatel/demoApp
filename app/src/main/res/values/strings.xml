@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">example</string>
+    <string name="bullet">&#8226;</string>
+
+    <string name="public_key">1de816f8-b48e-4d19-108c-51de830nkl-md05</string>
+    <string name="url_get_jobs">http://go.flipped.ca/authorize/get_access_key/%1$s</string>
+    <string name="url_getaccess_key">http://go.flipped.ca/authorize/get_access_key/%1$s</string>
+</resources>
